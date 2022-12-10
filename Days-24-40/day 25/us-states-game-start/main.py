@@ -41,10 +41,7 @@ while states_correct < 50:
     answer_state = screen.textinput(title=f"{states_correct}/50 States Correct", prompt="What's another state's name?").title()
     # stop if Cancel
     if answer_state == "Cancel":
-        missing_states = []
-        for state in state_list:
-            if state not in selected_states:
-                missing_states.append(state)
+        missing_states = [state for state in state_list if state not in selected_states]
         new_data = pandas.DataFrame(missing_states)
         new_data.to_csv("states to learn.csv")
         print(missing_states)
