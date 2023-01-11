@@ -3,7 +3,7 @@ import os
 
 # https://api.openweathermap.org/data/2.5/forecast?lat=35.583710&lon=-78.800850&appid=8654f8474c9e9d2fe28254be3709229d
 OWM_endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = "8654f8474c9e9d2fe28254be3709229d"
+api_key = ""
 #env
 #export OWM_API_KEY="xxx"
 #api_key = os.environ.get("OWM_API_KEY")
